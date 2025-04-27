@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 # from streamlit_autorefresh import st_autorefresh
 
 # st_autorefresh(interval=60 * 1000, key="data_refresh")
-# Chnage
+
 # --- PAGE SETTINGS ---
 st.set_page_config(page_title="Weekly Productivity Dashboard", page_icon="📈", layout="wide")
 
@@ -30,21 +30,14 @@ if isinstance(date_range, tuple) and len(date_range) == 2:
 else:
     st.error("❗ Please select both a start and end date.")
     st.stop()
-# conn = mysql.connector.connect(
-#     host="localhost",
-#     user="root",
-#     password="123asd!@#",
-#     database="employee_monitoring"
-# )
+
 # --- DATABASE CONNECTION ---
 conn = mysql.connector.connect(
-    host="fdb1030.awardspace.net",
-    port=3306,
-    user="4625513_employeemonitoring",
+    host="localhost",
+    user="root",
     password="123asd!@#",
-    database="4625513_employeemonitoring"
+    database="employee_monitoring"
 )
-
 cursor = conn.cursor()
 
 # Fetching data within the selected date range
