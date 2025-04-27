@@ -30,12 +30,17 @@ if isinstance(date_range, tuple) and len(date_range) == 2:
 else:
     st.error("❗ Please select both a start and end date.")
     st.stop()
-
+# conn = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     password="123asd!@#",
+#     database="employee_monitoring"
+# )
 # --- DATABASE CONNECTION ---
 conn = mysql.connector.connect(
     host="fdb1030.awardspace.net",
     user="4625513_employeemonitoring",
-    password="(The password for 4625513_employeemonitoring)",
+    password="123asd!@#",
     database="4625513_employeemonitoring"
 )
 

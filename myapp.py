@@ -20,6 +20,12 @@ model = YOLO(r"D:\Employee Monitoring YOLO V11\runs\detect\train5\weights\best.p
 
 # Connect to MySQL database
 def get_db_connection():
+#     conn = mysql.connector.connect(
+#     host="fdb1030.awardspace.net",
+#     user="4625513_employeemonitoring",
+#     password="(The password for 4625513_employeemonitoring)",
+#     database="4625513_employeemonitoring"
+# )
     return mysql.connector.connect(
         host="localhost",  # Replace with your host
         user="root",       # Replace with your MySQL username
