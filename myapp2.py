@@ -39,6 +39,7 @@ else:
 # --- DATABASE CONNECTION ---
 conn = mysql.connector.connect(
     host="fdb1030.awardspace.net",
+    port=3306,
     user="4625513_employeemonitoring",
     password="123asd!@#",
     database="4625513_employeemonitoring"
