@@ -33,11 +33,12 @@ else:
 
 # --- DATABASE CONNECTION ---
 conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="123asd!@#",
-    database="employee_monitoring"
+    host="fdb1030.awardspace.net",
+    user="4625513_employeemonitoring",
+    password="(The password for 4625513_employeemonitoring)",
+    database="4625513_employeemonitoring"
 )
+
 cursor = conn.cursor()
 
 # Fetching data within the selected date range
